@@ -4,11 +4,14 @@ import App from "./App.jsx";
 import { store } from "./app/store.js";
 import { Provider } from "react-redux";
 import "./index.css";
+import { fetchUsers } from "./features/users/usersSlice.js";
+
+store.dispatch(fetchUsers());
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>
+  // </React.StrictMode> 
 );

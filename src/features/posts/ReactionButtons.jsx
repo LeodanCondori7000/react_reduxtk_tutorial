@@ -12,7 +12,7 @@ const reactionEmoji = {
 const ReactionButtons = ({ post }) => {
   const dispatch = useDispatch();
 
-  console.log(Object.entries(reactionEmoji));
+  // console.log(Object.entries(reactionEmoji));
 
   // Object.entries(reactionEmoji) = [
   //   ["thumbsUp", "👍"],
